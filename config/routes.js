@@ -10,5 +10,8 @@
 
 module.exports.routes = {
 
+    'GET /articles': 'articles/index',
+    'POST /articles': 'articles/create',
+    'GET /articles/:id': 'articles/single'
 
 };

@@ -19,10 +19,6 @@ module.exports = {
 
   fn: async function (inputs) {
 
-    /*
-    FUTURE: handle errors and setup to return 404
-    */
-
     let articleRecord = await Articles.find({})
     return articleRecord;
 

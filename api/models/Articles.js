@@ -26,5 +26,9 @@ module.exports = {
 
   },
 
+  /*
+  FUTURE: Do some work with customToJSON
+  */
+
 };
 

@@ -17,7 +17,7 @@ module.exports = {
   },
 
 
-  fn: async function (inputs) {
+  fn: async function () {
 
     await Articles.destroyOne({ id: this.req.params.id });
     // All done.

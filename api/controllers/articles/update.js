@@ -8,10 +8,9 @@ module.exports = {
 
 
   inputs: {
-
+    
     author: {
       type: 'string',
-      required: true
     },
     title: {
       type: 'string',
@@ -31,9 +30,15 @@ module.exports = {
 
 
   fn: async function ({author, title, body}) {
-    
+
+    // FUTURE BEGINS
+    if (author) {
+      return this.res.status(400).json('Cannot update author')
+    }
+    // FUTURE ENDS
+
     let articleRecord = await Articles.updateOne({ id: this.req.params.id })
-      .set({ author, title, body });
+      .set({ title, body });
     // All done.
     return articleRecord;
 

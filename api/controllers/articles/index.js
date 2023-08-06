@@ -17,9 +17,9 @@ module.exports = {
   },
 
 
-  fn: async function (inputs) {
+  fn: async function () {
 
-    let articleRecord = await Articles.find({})
+    let articleRecord = await Articles.find({});
     return articleRecord;
 
   }

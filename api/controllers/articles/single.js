@@ -17,7 +17,7 @@ module.exports = {
   },
 
 
-  fn: async function (inputs) {
+  fn: async function () {
 
     let articleRecord = await Articles.findOne({ id: this.req.params.id });
     if (!articleRecord) {

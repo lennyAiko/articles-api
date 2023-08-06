@@ -10,10 +10,10 @@
 
 module.exports.routes = {
 
-    'GET /articles': 'articles/index',
-    'POST /articles': 'articles/create',
-    'GET /articles/:id': 'articles/single',
-    'PATCH /articles/:id': 'articles/update',
-    'DELETE /articles/:id': 'articles/delete'
+  'GET /articles': 'articles/index',
+  'POST /articles': 'articles/create',
+  'GET /articles/:id': 'articles/single',
+  'PATCH /articles/:id': 'articles/update',
+  'DELETE /articles/:id': 'articles/delete'
 
 };

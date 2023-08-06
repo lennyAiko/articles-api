@@ -8,7 +8,7 @@ module.exports = {
 
 
   inputs: {
-    
+
     author: {
       type: 'string',
     },
@@ -33,7 +33,7 @@ module.exports = {
 
     // FUTURE BEGINS
     if (author) {
-      return this.res.status(400).json('Cannot update author')
+      return this.res.status(400).json('Cannot update author');
     }
     // FUTURE ENDS
 

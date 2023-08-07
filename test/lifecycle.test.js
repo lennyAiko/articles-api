@@ -5,6 +5,7 @@ FUTURE: use `beforeEach` or `afterEach` for testing models.
 */
 
 var sails = require('sails');
+var superset = require('supertest');
 
 // `done` let's mocha know that this is asynchronous
 before(function (done) {
@@ -18,6 +19,7 @@ before(function (done) {
   }, (err) => {
     if (err) {return done(err);}
     global.sails = sails;
+    global.superset = superset;
     return done();
   });
 });

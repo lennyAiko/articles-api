@@ -1,6 +1,6 @@
-describe('#createArticleEndpoint()', () => {
+describe('POST /articles', () => {
   it('should create an article', (done) => {
-    global.superset(sails.hooks.http.app)
+    global.supertest(sails.hooks.http.app)
         .post('/articles')
         .send({
           'author': 'Alex Hormozi',

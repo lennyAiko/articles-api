@@ -17,7 +17,7 @@ module.exports = {
     title: {
       type: 'string',
       required: true,
-      unique: true, // FUTURE
+      unique: true, 
       maxLength: 60
     },
     body: {

@@ -3,7 +3,7 @@ describe('#fetchSingleArticle()', () => {
     Articles.findOne({title: 'Test title'})
     .then((data) => {
       if (!data) {
-        return done(new Error('No article created'));
+        return done(new Error('Article not found'));
       }
       return done();
     })

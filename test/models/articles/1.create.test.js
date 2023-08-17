@@ -12,11 +12,9 @@ describe('#createArticle()', () => {
       author: 'Alex Hormozi',
       title: '100M offers book',
       body: 'This is another body again'
-    }]);
+    }]).fetch();
     if (!article) {
       return new Error('Should create an article but it failed');
     }
   });
-
-
 });
